@@ -1,0 +1,388 @@
+/* ============================ GOOGGLE FONTS ==============================*/
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Barlow Condensed", sans-serif;
+    background: #101010;
+}
+
+
+:root {
+    --font-width-title: 800;
+    --font-size-title: 3rem;
+}
+
+/* ================================= NAVIGATION SECTION ========================== */
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    display: flex;
+    z-index: 998;
+    top: 0;
+}
+
+nav .navbrand img{
+   width: 50px;
+}
+
+nav .nav-items {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav .nav-items li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.toggle-btn {
+    display: none;
+    color: #fff;
+}
+
+@media screen and (max-width:768px) {
+    /* nav {
+        background: #101010;
+    } */
+    nav .nav-items {
+        display: none;
+    }
+    .toggle-btn {
+        display: block;
+    }
+}
+
+ /* ================================= FORM SECTION ========================== */
+
+
+.form-section {
+    background: #1c1c1c9a;
+    backdrop-filter: blur(20px);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.form-section .form-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.form-section .form-container form {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    background: gray;
+    padding: 20px;
+    width: 700px;
+    height: 50vh;
+}
+
+.form-section .form-container form input {
+    padding: 10px;
+}
+
+/* ================================= HOME SECTION ========================== */
+
+.home-section {
+    background: url(image/home-bg.png) no-repeat center center / cover;
+    padding: 30px 0;
+}
+
+.home-banner-container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.home-banner-container .home-banner-left h1 {
+    font-size: var(--font-size-title);
+    font-weight: var( --font-width-title);
+    color: #fff;
+}
+
+.home-banner-container .home-banner-left h1 span {
+    color: #FFA500;
+}
+
+.home-banner-container .home-banner-left h3 {
+    color: #fff;
+}
+
+.home-banner-left button {
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    background: linear-gradient(#FFA500, #996300);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+}
+
+.home-banner-container .home-banner-right .home-banner-image img {
+    animation: home-banner-image-animate 3s ease;
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .home-section {
+        padding: 20px;
+    }
+
+    .home-banner-left {
+        text-align: center;
+    }
+
+    .home-banner-left h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .home-banner-container .home-banner-right .home-banner-image {
+        display: none;
+    }
+}
+
+/* ================================= PROGRAM SECTION ========================== */
+
+.program-container h1 {
+    font-weight: var(--font-width-title);
+    font-size: var(--font-size-title);
+    color: #fff;
+}
+
+.program-container h1 span{
+    color: #FFA500;
+}
+
+.program-card {
+    padding: 15px;
+}
+
+.program {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.program-card .program .program-image img {
+    border-radius: 7px 7px 0 0;
+    width: 100%;
+}
+
+.program-card .program .program-description {
+    border-radius: 0 0 7px 7px ;
+    background: #1c1c1c;
+    color: #fff;
+    padding: 10px;
+}
+
+
+@media screen and (max-width:768px) {
+    .program-container h1 {
+        text-align: center;
+    }
+}
+
+/* ================================= ABOUT SECTION ========================== */
+
+.about-section {
+    background: url(image/about-bg.png) no-repeat center center / cover;
+}
+
+.about-description h1 {
+    font-weight: var(--font-width-title);
+    font-size: var(--font-size-title);
+    color: #fff;
+}
+
+.about-description h1 span {
+    color: #FFA500;
+}
+
+.about-description H3 {
+    color: #fff;
+}
+
+
+/* ================================= PRICING SECTION ========================== */
+
+.pricing-section  {
+   position: relative;
+   z-index: 30;
+}
+
+.pricing-section::after {
+    background: url(image/kyurugi2.jpeg) no-repeat center center / cover;
+    content: '';
+    position: absolute;
+    opacity: 0.10;
+    width: 100%;
+    height: 100%;
+    z-index: -30;
+    left: 0;
+    top: 0;
+}
+
+.pricing {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    background: #1c1c1c;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.pricing-card {
+    padding: 10px 20px;
+}
+
+.price {
+    font-weight: 800;
+    color: #FFA500;
+}
+
+.pricing-title {
+    font-weight: var(--font-width-title);
+    font-size: var(--font-size-title);
+    text-align: center;
+    color: #fff;
+}
+
+.training-title {
+    margin: 20px 0;
+}
+
+.training-title , .price-title {
+    color: #FFA500;
+}
+
+.pricing hr {
+    color: #FFA500;
+}
+
+.pricing-title span {
+    color: #FFA500;
+}
+
+.pricing-btn button {
+    background: linear-gradient(#FFA500, #996300);
+    margin: 30px 0 10px 0;
+    border-radius: 7px;
+    padding:20px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    width: 100%;
+}
+
+/* ================================= FOOTER SECTION ========================== */
+
+footer {
+    padding: 50px 0 20px 0;
+}
+
+footer .footer-left {
+    padding: 20px 0;
+}
+
+footer .footer-left h2 {
+    font-weight: 800;
+    color: #fff;
+}
+
+footer .footer-left h2 span {
+    color: #FFA500;
+}
+
+footer .footer-left {
+    flex-direction: column;
+    display: flex;
+}
+
+.footer-left-icon {
+    margin-right: 10px;
+}
+
+footer .footer-left a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-container span {
+   color: gray;
+}
+
+.footer-menu {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-menu h3 {
+    color: #fff;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer-menu li a:hover {
+    color: #FFA500;
+}
+
+.footer-right {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    display: flex;
+}
+
+.footer-right  h3 {
+    color: #fff;
+}
+
+.footer-righ-icon-container {
+    display: flex;
+}
+
+.footer-righ-icon {
+    font-size: 2rem;
+    padding: 15px;
+    color: gray;
+}
+
+.footer-righ-icon:hover {
+    cursor: pointer;
+}
+
+.footer-righ-icon:active {
+    color: #FFA500;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+@media screen and (max-width: 578px) {
+    footer .footer-left {
+        text-align: center;
+    }
+}
+
